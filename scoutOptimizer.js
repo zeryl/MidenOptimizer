@@ -11,7 +11,8 @@ $(document).ready(function() {
         var GINVESTED = $('#ginvested').val();
         var RELICP = $('#relicp').val();
         var GEMP = $('#gemp').val();
-        var RRES = 0;
+        console.log(GEMP);
+        /*var RRES = 0;
         var GRES = 0;
         var RLUCK = 0;
         var RDROP = 0;
@@ -146,3 +147,4 @@ $(document).ready(function() {
         }
 });
 });
+*/
