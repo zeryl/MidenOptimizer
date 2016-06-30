@@ -148,7 +148,7 @@ $(document).ready(function() {
                     $("#rdrop").html(RDROP);
                     break;
                 case CGDROP:
-                    VALUE_AFTER = ((GDROP/1)+1)*GEMP;
+                    VALUE_AFTER = ((Math.floor((GRES+1)/5))+5)*GEMP;
                     GDROP = GDROP+1;
                     $("#gdrop").html(GDROP);
                     break;
