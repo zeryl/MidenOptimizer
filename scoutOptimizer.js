@@ -11,6 +11,7 @@ var RELICP = document.getElementById('relicp');
 var GEMP = document.getElementById('gemp');
 
 document.onload = function(){
-    //test
+    document.getElementById("scout").onclick = function(){
+        //test
 };
 };
