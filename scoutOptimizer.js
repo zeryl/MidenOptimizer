@@ -114,8 +114,8 @@ $(document).ready(function() {
             var CRRES = (((RRES/1.5)+1)*RELICP)/(RelicRes() -CURRENT);
             console.log("CRRES");
             console.log(CRRES);
-            var CGRES = (((GRES/1)+5)*GEMP)/(GemRes() -CURRENT);
-            var CRLUCK = (((RLUCK/3)+1)*RELICP)/(ResLuck() -CURRENT);
+            var CGRES = ((((Math.floor(GRES+1))/5)+5)*GEMP)/(GemRes() -CURRENT);
+            var CRLUCK = (((RLUCK/0.3)+1)*RELICP)/(ResLuck() -CURRENT);
             //var CRDROP = (((RDROP/1)+1)*RELICP)/(RelicDrop() -CURRENT);
             //var CGDROP = (((GDROP/1)+5)*GEMP)/(GemDrop() -CURRENT);
             console.log("MAX");
@@ -133,7 +133,7 @@ $(document).ready(function() {
                     break;
                 case CRLUCK:
                     VALUE_AFTER = VALUE_AFTER + ((RLUCK/3)+1)*RELICP;
-                    RLUCK = RLUCK+3;
+                    RLUCK = RLUCK+0.3;
                     $("#rluck").html(RLUCK);
                     break;
                 /*case CRDROP:
