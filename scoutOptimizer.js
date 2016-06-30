@@ -1,16 +1,16 @@
 $(document).ready(function() {
     $("#scout").click(function() {
-        var GLEVEL = $('#glevel').val();
-        var LEVEL = $('#level').val();
-        var XP = $('#xp').val();
-        var EFF = $('#eff').val();
-        var KRES = $('#kres').val();
-        var KLUCK = $('#kluck').val();
-        var RELIC = $('#relic').val();
-        var RINVESTED = $('#rinvested').val();
-        var GINVESTED = $('#ginvested').val();
-        var RELICP = $('#relicp').val();
-        var GEMP = $('#gemp').val();
+        var GLEVEL = ParseInt($('#glevel').val());
+        var LEVEL = ParseInt($('#level').val());
+        var XP = ParseInt($('#xp').val());
+        var EFF = ParseInt($('#eff').val());
+        var KRES = ParseInt($('#kres').val());
+        var KLUCK = ParseInt($('#kluck').val());
+        var RELIC = ParseInt($('#relic').val());
+        var RINVESTED = ParseInt($('#rinvested').val());
+        var GINVESTED = ParseInt($('#ginvested').val());
+        var RELICP = ParseInt($('#relicp').val());
+        var GEMP = ParseInt($('#gemp').val());
         console.log(GEMP);
         var RRES = 0;
         var GRES = 0;
