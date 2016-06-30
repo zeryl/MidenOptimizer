@@ -36,7 +36,9 @@ $(document).ready(function() {
             return (T1*CT1+T2*CT2+T3*CT3+T4*CT4+T5*CT5);
         }
         var VALUE_BEFORE = RINVESTED*RELICP+GINVESTED*GEMP ;
+        console.log(VALUE_BEFORE);
         var VALUE_AFTER = ((XP/0,2*(XP/0,2 + 1))/2)*RELICP;
+        console.log(VALUE_AFTER);
         function RelicRes() {
             var EFF_LEVEL= 1/100*(LEVEL+EFF+RRES+1,5);
             var T1 = (1+EFF_LEVEL)*(1+(1/KRES))*(1+(1/GRES));
@@ -103,6 +105,7 @@ $(document).ready(function() {
         }
         while(VALUE_BEFORE>VALUE_AFTER){
             var CURRENT = Current();
+            console.log(CURRENT);
             var CRRES = (((RRES/1,5)+1)*RELICP)/(RelicRes() -CURRENT);
             var CGRES = (((GRES/1)+1)*GEMP)/(GemRes() -CURRENT);
             var CRLUCK = (((RLUCK/3)+1)*RELICP)/(ResLuck() -CURRENT);
