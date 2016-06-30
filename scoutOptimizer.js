@@ -16,6 +16,10 @@ $(document).ready(function() {
         var RLUCK = 0;
         var RDROP = 0;
         var GDROP = 0;
+        var VALUE_BEFORE = RINVESTED*RELICP+GINVESTED*GEMP ;
+        console.log(VALUE_BEFORE);
+        var VALUE_AFTER = ((XP/0,2*(XP/0,2 + 1))/2)*RELICP;
+        console.log(VALUE_AFTER);
         function Current() {
             var EFF_LEVEL= 1/100*(LEVEL+EFF+RRES);
             var T1 = (1+EFF_LEVEL)*(1+(1/KRES))*(1+(1/GRES));
@@ -35,10 +39,6 @@ $(document).ready(function() {
             if(CT5>1){CT5=1;}
             return (T1*CT1+T2*CT2+T3*CT3+T4*CT4+T5*CT5);
         }
-        var VALUE_BEFORE = RINVESTED*RELICP+GINVESTED*GEMP ;
-        console.log(VALUE_BEFORE);
-        var VALUE_AFTER = ((XP/0,2*(XP/0,2 + 1))/2)*RELICP;
-        console.log(VALUE_AFTER);
         function RelicRes() {
             var EFF_LEVEL= 1/100*(LEVEL+EFF+RRES+1,5);
             var T1 = (1+EFF_LEVEL)*(1+(1/KRES))*(1+(1/GRES));
