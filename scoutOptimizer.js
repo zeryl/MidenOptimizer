@@ -12,7 +12,7 @@ $(document).ready(function() {
         var RELICP = $('#relicp').val();
         var GEMP = $('#gemp').val();
         console.log(GEMP);
-        /*var RRES = 0;
+        var RRES = 0;
         var GRES = 0;
         var RLUCK = 0;
         var RDROP = 0;
@@ -21,6 +21,7 @@ $(document).ready(function() {
         console.log(VALUE_BEFORE);
         var VALUE_AFTER = ((XP/0,2*(XP/0,2 + 1))/2)*RELICP;
         console.log(VALUE_AFTER);
+        /*
         function Current() {
             var EFF_LEVEL= 1/100*(LEVEL+EFF+RRES);
             var T1 = (1+EFF_LEVEL)*(1+(1/KRES))*(1+(1/GRES));
