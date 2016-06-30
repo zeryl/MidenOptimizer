@@ -119,7 +119,7 @@ $(document).ready(function() {
             var CRRES = (((RRES/1.5)+1)*RELICP)/(RelicRes() -CURRENT);
             console.log("CRRES");
             console.log(CRRES);
-            var CGRES = ((((Math.floor((GRES+1)/5)+5)*GEMP)/(GemRes() -CURRENT);
+            var CGRES = ((Math.floor((GRES+1)/5)+5)*GEMP)/(GemRes() -CURRENT);
             var CRLUCK = (((RLUCK/0.3)+1)*RELICP)/(ResLuck() -CURRENT);
             var DROPS = Drop();
             var CRDROP = (((RDROP/1)+1)*RELICP)/(DROPS*0.01);
