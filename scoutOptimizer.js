@@ -116,11 +116,11 @@ $(document).ready(function() {
             console.log(CRRES);
             var CGRES = (((GRES/1)+5)*GEMP)/(GemRes() -CURRENT);
             var CRLUCK = (((RLUCK/3)+1)*RELICP)/(ResLuck() -CURRENT);
-            var CRDROP = (((RDROP/1)+1)*RELICP)/(RelicDrop() -CURRENT);
-            var CGDROP = (((GDROP/1)+5)*GEMP)/(GemDrop() -CURRENT);
+            //var CRDROP = (((RDROP/1)+1)*RELICP)/(RelicDrop() -CURRENT);
+            //var CGDROP = (((GDROP/1)+5)*GEMP)/(GemDrop() -CURRENT);
             console.log("MAX");
-            console.log(Math.max(CRRES,CGRES,CRLUCK,CRDROP,CGDROP));
-            switch(Math.max(CRRES,CGRES,CRLUCK,CRDROP,CGDROP)) {
+            console.log(Math.min(CRRES,CGRES,CRLUCK));
+            switch(Math.min(CRRES,CGRES,CRLUCK,CRDROP,CGDROP)) {
                 case CRRES:
                     VALUE_AFTER = ((RRES/1.5)+1)*RELICP;
                     RRES = RRES+1.,5;
@@ -136,7 +136,7 @@ $(document).ready(function() {
                     RLUCK = RLUCK+3;
                     $("#rluck").html(RLUCK);
                     break;
-                case CRDROP:
+                /*case CRDROP:
                     VALUE_AFTER = ((RDROP/1)+1)*RELICP;
                     RDROP = RDROP+1;
                     $("#rdrop").html(RDROP);
@@ -145,7 +145,7 @@ $(document).ready(function() {
                     VALUE_AFTER = ((GDROP/1)+1)*GEMP;
                     GDROP = GDROP+1;
                     $("#gdrop").html(GDROP);
-                    break;
+                    break;*/
                 default:
                     console.log("ERROR");
             };
