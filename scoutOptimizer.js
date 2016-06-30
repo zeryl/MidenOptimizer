@@ -12,10 +12,10 @@ var GEMP = document.getElementById('gemp');
 
 $(document).ready(function() {
     $("#scout").click(function() {
-        document.getElementById("rres").innerHTML = "0";
-        document.getElementById("gres").innerHTML = "0";
-        document.getElementById("rluck").innerHTML = "0";
-        document.getElementById("rdrop").innerHTML = "0";
-        document.getElementById("gdrop").innerHTML = "0";
+        $("#rres").html = '0';
+        $("#gres").html = '0';
+        $("#rluck").html = '0';
+        $("#rdrop").html = '0';
+        $("#gdrop").html = '0';
 });
 });
