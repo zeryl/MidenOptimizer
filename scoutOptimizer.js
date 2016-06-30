@@ -20,7 +20,7 @@ $(document).ready(function() {
         var VALUE_AFTER = (((XP/0.2)*(XP/0.2 + 1))/2)*RELICP;
         function Current() {
             var EFF_LEVEL= (LEVEL+EFF+RRES)/100;
-            var T1 = (1+EFF_LEVEL)*(1+(1/KRES))*(1+(1/GRES));
+            var T1 = (1+EFF_LEVEL)*(1+(KRES/100))*(1+(GRES/100));
             var T2 = (1+EFF_LEVEL*(Math.pow(0.67,1)))*(1+(KRES/100))*(1+(GRES/100))*2;
             var T3 = (1+EFF_LEVEL*(Math.pow(0.67,2)))*(1+(KRES/100))*(1+(GRES/100))*4;
             var T4 = (1+EFF_LEVEL*(Math.pow(0.67,3)))*(1+(KRES/100))*(1+(GRES/100))*5;
@@ -45,7 +45,7 @@ $(document).ready(function() {
         }
         function RelicRes() {
             var EFF_LEVEL= (LEVEL+EFF+RRES+1.5)/100;
-            var T1 = (1+EFF_LEVEL)*(1+(1/KRES))*(1+(1/GRES));
+            var T1 = (1+EFF_LEVEL)*(1+(KRES/100))*(1+(GRES/100));
             var T2 = (1+EFF_LEVEL*(Math.pow(0.67,1)))*(1+(KRES/100))*(1+(GRES/100))*2;
             var T3 = (1+EFF_LEVEL*(Math.pow(0.67,2)))*(1+(KRES/100))*(1+(GRES/100))*4;
             var T4 = (1+EFF_LEVEL*(Math.pow(0.67,3)))*(1+(KRES/100))*(1+(GRES/100))*5;
@@ -64,7 +64,7 @@ $(document).ready(function() {
         }
         function GemRes() {
             var EFF_LEVEL= (LEVEL+EFF+RRES)/100;
-            var T1 = (1+EFF_LEVEL)*(1+(1/KRES))*(1+(1/GRES));
+            var T1 = (1+EFF_LEVEL)*(1+(KRES/100))*(1+(GRES/100));
             var T2 = (1+EFF_LEVEL*(Math.pow(0.67,1)))*(1+(KRES/100))*(1.01+(GRES/100))*2;
             var T3 = (1+EFF_LEVEL*(Math.pow(0.67,2)))*(1+(KRES/100))*(1,01+(GRES/100))*4;
             var T4 = (1+EFF_LEVEL*(Math.pow(0.67,3)))*(1+(KRES/100))*(1.01+(GRES/100))*5;
@@ -84,7 +84,7 @@ $(document).ready(function() {
         function ResLuck() {
             NRLUCK=RLUCK+0.3;
             var EFF_LEVEL= (LEVEL+EFF+RRES)/100;
-            var T1 = (1+EFF_LEVEL)*(1+(1/KRES))*(1+(1/GRES));
+            var T1 = (1+EFF_LEVEL)*(1+(KRES/100))*(1+(GRES/100));
             var T2 = (1+EFF_LEVEL*(Math.pow(0.67,1)))*(1+(KRES/100))*(1+(GRES/100))*2;
             var T3 = (1+EFF_LEVEL*(Math.pow(0.67,2)))*(1+(KRES/100))*(1+(GRES/100))*4;
             var T4 = (1+EFF_LEVEL*(Math.pow(0.67,3)))*(1+(KRES/100))*(1+(GRES/100))*5;
