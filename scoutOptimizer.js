@@ -111,26 +111,31 @@ $(document).ready(function() {
             switch(Math.max(CRRES,CGRES,CRLUCK,CRDROP,CGDROP)) {
                 case CRRES:
                     VALUE_AFTER = ((RRES/1,5)+1)*RELICP;
+                    console.log(VALUE_AFTER);
                     RRES = RRES+1,5;
                     $("#rres").html(RRES);
                     break;
                 case CGRES:
                     VALUE_AFTER = ((GRES/1)+1)*GEMP;
+                    console.log(VALUE_AFTER);
                     GRES = GRES+1;
                     $("#gres").html(GRES);
                     break;
                 case CRLUCK:
                     VALUE_AFTER = ((RLUCK/3)+1)*RELICP;
+                    console.log(VALUE_AFTER);
                     RLUCK = RLUCK+3;
                     $("#rluck").html(RLUCK);
                     break;
                 case CRDROP:
                     VALUE_AFTER = ((RDROP/1)+1)*RELICP;
+                    console.log(VALUE_AFTER);
                     RDROP = RDROP+1;
                     $("#rdrop").html(RDROP);
                     break;
                 case CGDROP:
                     VALUE_AFTER = ((GDROP/1)+1)*GEMP;
+                    console.log(VALUE_AFTER);
                     GDROP = GDROP+1;
                     $("#gdrop").html(GDROP);
                     break;
