@@ -11,6 +11,7 @@ $(document).ready(function() {
         var GINVESTED = parseInt($('#ginvested').val());
         var RELICP = parseInt($('#relicp').val());
         var GEMP = parseInt($('#gemp').val());
+        var MEP = parseInt($('#mep').val());
         var RRES = 0;
         var GRES = 0;
         var RLUCK = 0;
@@ -101,11 +102,15 @@ $(document).ready(function() {
             if(CT5>1){CT5=1;}
             return (T1*CT1+T2*CT2+T3*CT3+T4*CT4+T5*CT5);
         }
-        function RelicDrop() {
-            //placeholder
-        }
-        function GemDrop() {
-            //placeholder
+        function Drop() {
+            var GemDrop = 0.02*GEMP;
+            var KeyDrop = 0.0081*GEMP + 1.164*RELICP + 17.625*MEP + 1120.587675;
+            var Relic635Drop = 1.025*RELICP*(1 + RELIC/100);
+            var Relic15Drop = 0.9*RELICP*(1 + RELIC/100);
+            var GoldDrop = (1000 + (500 + 45*GLEVEL))*0.185;
+            var MEDrop = 500*MEP;
+            var ItemDrop = 1120.587675;
+            return (GemDrop+KeyDrop+Relic635Drop+Relic15Drop+GoldDrop+MEDrop+ItemDrop);
         }
         while(VALUE_BEFORE>VALUE_AFTER){
             var CURRENT = Current();
@@ -114,10 +119,11 @@ $(document).ready(function() {
             var CRRES = (((RRES/1.5)+1)*RELICP)/(RelicRes() -CURRENT);
             console.log("CRRES");
             console.log(CRRES);
-            var CGRES = ((((Math.floor(GRES+1))/5)+5)*GEMP)/(GemRes() -CURRENT);
+            var CGRES = ((((Math.floor((GRES+1)/5)+5)*GEMP)/(GemRes() -CURRENT);
             var CRLUCK = (((RLUCK/0.3)+1)*RELICP)/(ResLuck() -CURRENT);
-            //var CRDROP = (((RDROP/1)+1)*RELICP)/(RelicDrop() -CURRENT);
-            //var CGDROP = (((GDROP/1)+5)*GEMP)/(GemDrop() -CURRENT);
+            var DROPS = Drop();
+            var CRDROP = (((RDROP/1)+1)*RELICP)/(DROPS*0.01);
+            var CGDROP = ((Math.floor((GDROP+1)/5)+5)*GEMP)/(DROPS*0.01);
             console.log("MAX");
             console.log(Math.min(CRRES,CGRES,CRLUCK));
             switch(Math.min(CRRES,CGRES,CRLUCK)) {
@@ -136,7 +142,7 @@ $(document).ready(function() {
                     RLUCK = RLUCK+0.3;
                     $("#rluck").html(RLUCK);
                     break;
-                /*case CRDROP:
+                case CRDROP:
                     VALUE_AFTER = ((RDROP/1)+1)*RELICP;
                     RDROP = RDROP+1;
                     $("#rdrop").html(RDROP);
@@ -145,7 +151,7 @@ $(document).ready(function() {
                     VALUE_AFTER = ((GDROP/1)+1)*GEMP;
                     GDROP = GDROP+1;
                     $("#gdrop").html(GDROP);
-                    break;*/
+                    break;
                 default:
                     console.log("ERROR");
             };
