@@ -144,7 +144,6 @@ $(document).ready(function() {
                     $("#gdrop").html(GDROP);
                     break;
             }
-        }
+        }*/
 });
 });
-*/
