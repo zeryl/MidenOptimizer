@@ -122,17 +122,17 @@ $(document).ready(function() {
             console.log(Math.min(CRRES,CGRES,CRLUCK));
             switch(Math.min(CRRES,CGRES,CRLUCK)) {
                 case CRRES:
-                    VALUE_AFTER = ((RRES/1.5)+1)*RELICP;
+                    VALUE_AFTER = VALUE_AFTER + ((RRES/1.5)+1)*RELICP;
                     RRES = RRES+1.,5;
                     $("#rres").html(RRES);
                     break;
                 case CGRES:
-                    VALUE_AFTER = ((GRES/1)+1)*GEMP;
+                    VALUE_AFTER = VALUE_AFTER + ((GRES/1)+1)*GEMP;
                     GRES = GRES+1;
                     $("#gres").html(GRES);
                     break;
                 case CRLUCK:
-                    VALUE_AFTER = ((RLUCK/3)+1)*RELICP;
+                    VALUE_AFTER = VALUE_AFTER + ((RLUCK/3)+1)*RELICP;
                     RLUCK = RLUCK+3;
                     $("#rluck").html(RLUCK);
                     break;
