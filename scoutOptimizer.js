@@ -64,7 +64,7 @@ $(document).ready(function() {
         }
         function GemRes() {
             var EFF_LEVEL= (LEVEL+EFF+RRES)/100;
-            var T1 = (1+EFF_LEVEL)*(1+(KRES/100))*(1+(GRES/100));
+            var T1 = (1+EFF_LEVEL)*(1+(KRES/100))*(1.01+(GRES/100));
             var T2 = (1+EFF_LEVEL*(Math.pow(0.67,1)))*(1+(KRES/100))*(1.01+(GRES/100))*2;
             var T3 = (1+EFF_LEVEL*(Math.pow(0.67,2)))*(1+(KRES/100))*(1.01+(GRES/100))*4;
             var T4 = (1+EFF_LEVEL*(Math.pow(0.67,3)))*(1+(KRES/100))*(1.01+(GRES/100))*5;
@@ -127,12 +127,12 @@ $(document).ready(function() {
                     $("#rres").html(RRES);
                     break;
                 case CGRES:
-                    VALUE_AFTER = VALUE_AFTER + ((GRES/1)+1)*GEMP;
+                    VALUE_AFTER = VALUE_AFTER + ((Math.floor((GRES+1)/5))+5)*GEMP;
                     GRES = GRES+1;
                     $("#gres").html(GRES);
                     break;
                 case CRLUCK:
-                    VALUE_AFTER = VALUE_AFTER + ((RLUCK/3)+1)*RELICP;
+                    VALUE_AFTER = VALUE_AFTER + ((RLUCK/0.3)+1)*RELICP;
                     RLUCK = RLUCK+0.3;
                     $("#rluck").html(RLUCK);
                     break;
