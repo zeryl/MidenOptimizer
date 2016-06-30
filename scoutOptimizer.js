@@ -82,7 +82,7 @@ $(document).ready(function() {
             return (T1*CT1+T2*CT2+T3*CT3+T4*CT4+T5*CT5);
         }
         function ResLuck() {
-            NRLUCK=RLUCK+0.3;
+            var NRLUCK=RLUCK+0.3;
             var EFF_LEVEL= (LEVEL+EFF+RRES)/100;
             var T1 = (1+EFF_LEVEL)*(1+(KRES/100))*(1+(GRES/100));
             var T2 = (1+EFF_LEVEL*(Math.pow(0.67,1)))*(1+(KRES/100))*(1+(GRES/100))*2;
