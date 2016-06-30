@@ -13,6 +13,11 @@ var GEMP = document.getElementById('gemp');
 $(document).ready(function() {
     $("#scout").click(function() {
         var GLEVEL = document.getElementById('glevel');
+        $('#txt_name').val();
+        $('#txt_name').val();
+        $('#txt_name').val();
+        $('#txt_name').val();
+        $('#txt_name').val();
         $("#rres").html(GLEVEL);
         $("#gres").html('0');
         $("#rluck").html('0');
