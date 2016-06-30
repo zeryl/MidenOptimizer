@@ -12,12 +12,17 @@ var GEMP = document.getElementById('gemp');
 
 $(document).ready(function() {
     $("#scout").click(function() {
-        var GLEVEL = document.getElementById('glevel');
-        $('#txt_name').val();
-        $('#txt_name').val();
-        $('#txt_name').val();
-        $('#txt_name').val();
-        $('#txt_name').val();
+        var GLEVEL = $('#glevel').val();
+        var LEVEL = $('#level').val();
+        var XP = $('#xp').val();
+        var EFF = $('#eff').val();
+        var KRES = $('#kres').val();
+        var KLUCK = $('#kluck').val();
+        var RELIC = $('#relic').val();
+        var RINVESTED = $('#rinvested').val();
+        var GINVESTED = $('#ginvested').val();
+        var RELICP = $('#relicp').val();
+        var GEMP = $('#gemp').val();
         $("#rres").html(GLEVEL);
         $("#gres").html('0');
         $("#rluck").html('0');
