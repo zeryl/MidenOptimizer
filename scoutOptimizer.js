@@ -13,9 +13,9 @@ var GEMP = document.getElementById('gemp');
 $(document).ready(function() {
     $("#scout").click(function() {
         $("#rres").html('0');
-        $("#gres").html = '0';
-        $("#rluck").html = '0';
-        $("#rdrop").html = '0';
-        $("#gdrop").html = '0';
+        $("#gres").html('0');
+        $("#rluck").html('0');
+        $("#rdrop").html('0');
+        $("#gdrop").html('0');
 });
 });
