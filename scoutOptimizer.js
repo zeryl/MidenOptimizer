@@ -66,7 +66,7 @@ $(document).ready(function() {
             var EFF_LEVEL= (LEVEL+EFF+RRES)/100;
             var T1 = (1+EFF_LEVEL)*(1+(KRES/100))*(1+(GRES/100));
             var T2 = (1+EFF_LEVEL*(Math.pow(0.67,1)))*(1+(KRES/100))*(1.01+(GRES/100))*2;
-            var T3 = (1+EFF_LEVEL*(Math.pow(0.67,2)))*(1+(KRES/100))*(1,01+(GRES/100))*4;
+            var T3 = (1+EFF_LEVEL*(Math.pow(0.67,2)))*(1+(KRES/100))*(1.01+(GRES/100))*4;
             var T4 = (1+EFF_LEVEL*(Math.pow(0.67,3)))*(1+(KRES/100))*(1.01+(GRES/100))*5;
             var T5 = (1+EFF_LEVEL*(Math.pow(0.67,4)))*(1+(KRES/100))*(1.01+(GRES/100))*10;
             var CT1 = (0.90+KLUCK/100+RLUCK/100);
@@ -123,7 +123,7 @@ $(document).ready(function() {
             switch(Math.min(CRRES,CGRES,CRLUCK)) {
                 case CRRES:
                     VALUE_AFTER = VALUE_AFTER + ((RRES/1.5)+1)*RELICP;
-                    RRES = RRES+1.,5;
+                    RRES = RRES+1.5;
                     $("#rres").html(RRES);
                     break;
                 case CGRES:
