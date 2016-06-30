@@ -17,7 +17,7 @@ $(document).ready(function() {
         var RDROP = 0;
         var GDROP = 0;
         var VALUE_BEFORE = RINVESTED*RELICP+GINVESTED*GEMP ;
-        var VALUE_AFTER = (((XP/0,2)*(XP/0,2 + 1))/2)*RELICP;
+        var VALUE_AFTER = (((XP/0.2)*(XP/0.2 + 1))/2)*RELICP;
         function Current() {
             var EFF_LEVEL= (LEVEL+EFF+RRES)/100;
             var T1 = (1+EFF_LEVEL)*(1+(1/KRES))*(1+(1/GRES));
@@ -44,7 +44,7 @@ $(document).ready(function() {
             return (T1*CT1+T2*CT2+T3*CT3+T4*CT4+T5*CT5);
         }
         function RelicRes() {
-            var EFF_LEVEL= (LEVEL+EFF+RRES+1,5)/100;
+            var EFF_LEVEL= (LEVEL+EFF+RRES+1.5)/100;
             var T1 = (1+EFF_LEVEL)*(1+(1/KRES))*(1+(1/GRES));
             var T2 = (1+EFF_LEVEL*(Math.pow(0.67,1)))*(1+(KRES/100))*(1+(GRES/100))*2;
             var T3 = (1+EFF_LEVEL*(Math.pow(0.67,2)))*(1+(KRES/100))*(1+(GRES/100))*4;
@@ -82,7 +82,7 @@ $(document).ready(function() {
             return (T1*CT1+T2*CT2+T3*CT3+T4*CT4+T5*CT5);
         }
         function ResLuck() {
-            NRLUCK=RLUCK+0,3;
+            NRLUCK=RLUCK+0.3;
             var EFF_LEVEL= (LEVEL+EFF+RRES)/100;
             var T1 = (1+EFF_LEVEL)*(1+(1/KRES))*(1+(1/GRES));
             var T2 = (1+EFF_LEVEL*(Math.pow(0.67,1)))*(1+(KRES/100))*(1+(GRES/100))*2;
@@ -111,7 +111,7 @@ $(document).ready(function() {
             var CURRENT = Current();
             console.log("CURRENT");
             console.log(CURRENT);
-            var CRRES = (((RRES/1,5)+1)*RELICP)/(RelicRes() -CURRENT);
+            var CRRES = (((RRES/1.5)+1)*RELICP)/(RelicRes() -CURRENT);
             console.log("CRRES");
             console.log(CRRES);
             var CGRES = (((GRES/1)+5)*GEMP)/(GemRes() -CURRENT);
@@ -122,8 +122,8 @@ $(document).ready(function() {
             console.log(Math.max(CRRES,CGRES,CRLUCK,CRDROP,CGDROP));
             switch(Math.max(CRRES,CGRES,CRLUCK,CRDROP,CGDROP)) {
                 case CRRES:
-                    VALUE_AFTER = ((RRES/1,5)+1)*RELICP;
-                    RRES = RRES+1,5;
+                    VALUE_AFTER = ((RRES/1.5)+1)*RELICP;
+                    RRES = RRES+1.,5;
                     $("#rres").html(RRES);
                     break;
                 case CGRES:
