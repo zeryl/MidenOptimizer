@@ -40,7 +40,6 @@ $(document).ready(function() {
             if(CT5>1){CT5=1;}
             return (T1*CT1+T2*CT2+T3*CT3+T4*CT4+T5*CT5);
         }
-        /*
         function RelicRes() {
             var EFF_LEVEL= 1/100*(LEVEL+EFF+RRES+1,5);
             var T1 = (1+EFF_LEVEL)*(1+(1/KRES))*(1+(1/GRES));
@@ -105,6 +104,7 @@ $(document).ready(function() {
         function GemDrop() {
             //placeholder
         }
+        /*
         while(VALUE_BEFORE>VALUE_AFTER){
             var CURRENT = Current();
             console.log(CURRENT);
