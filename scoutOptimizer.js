@@ -120,7 +120,7 @@ $(document).ready(function() {
             //var CGDROP = (((GDROP/1)+5)*GEMP)/(GemDrop() -CURRENT);
             console.log("MAX");
             console.log(Math.min(CRRES,CGRES,CRLUCK));
-            switch(Math.min(CRRES,CGRES,CRLUCK,CRDROP,CGDROP)) {
+            switch(Math.min(CRRES,CGRES,CRLUCK)) {
                 case CRRES:
                     VALUE_AFTER = ((RRES/1.5)+1)*RELICP;
                     RRES = RRES+1.,5;
