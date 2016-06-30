@@ -12,7 +12,8 @@ var GEMP = document.getElementById('gemp');
 
 $(document).ready(function() {
     $("#scout").click(function() {
-        $("#rres").html('0');
+        var GLEVEL = document.getElementById('glevel');
+        $("#rres").html(GLEVEL);
         $("#gres").html('0');
         $("#rluck").html('0');
         $("#rdrop").html('0');
