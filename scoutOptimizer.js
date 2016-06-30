@@ -8,9 +8,6 @@ var RELIC = document.getElementById('relic');
 var RINVESTED = document.getElementById('rinvested');
 var GINVESTED = document.getElementById('ginvested');
 
-$(document).ready(function(){
-    $('#scout').click(function(){
-      document.getElementsByTagName("BODY")[0].style.backgroundColor = "yellow";
-      //dp something u idiot
-    });
-});
+document.getElementById("RootNode").onclick = function(){
+    document.getElementsByTagName("BODY")[0].style.backgroundColor = "yellow";
+}
