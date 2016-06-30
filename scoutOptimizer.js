@@ -31,7 +31,7 @@ $(document).ready(function() {
             if(CT3>1){CT3=1;}
             var CT4 = (0.15+(KLUCK/100+RLUCK/100)*(Math.pow(0.67,3)));
             if(CT4>1){CT4=1;}
-            var CT5 = (0.05+(KLUCK/100+RLUCK/100K)*(Math.pow(0.67,4)));
+            var CT5 = (0.05+(KLUCK/100+RLUCK/100)*(Math.pow(0.67,4)));
             if(CT5>1){CT5=1;}
             return (T1*CT1+T2*CT2+T3*CT3+T4*CT4+T5*CT5);
         }
