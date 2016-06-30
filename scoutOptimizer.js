@@ -101,7 +101,7 @@ $(document).ready(function() {
         function GemDrop() {
             //placeholder
         }
-        while(VALUE_BEFORE<VALUE_AFTER){
+        while(VALUE_BEFORE>VALUE_AFTER){
             var CURRENT = Current();
             var CRRES = (((RRES/1,5)+1)*RELICP)/(RelicRes() -CURRENT);
             var CGRES = (((GRES/1)+1)*GEMP)/(GemRes() -CURRENT);
