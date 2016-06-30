@@ -9,5 +9,5 @@ var RINVESTED = document.getElementById('rinvested');
 var GINVESTED = document.getElementById('ginvested');
 
 div#scout.onlick=function(){
-  
+  document.getElementsByTagName("BODY")[0].style.backgroundColor = "yellow";
 }
