@@ -35,6 +35,12 @@ $(document).ready(function() {
             if(CT4>1){CT4=1;}
             var CT5 = (0.05+(KLUCK/100+RLUCK/100)*(Math.pow(0.67,4)));
             if(CT5>1){CT5=1;}
+            console.log("T5");
+            console.log(T5);
+            console.log("CT5");
+            console.log(CT5);
+            console.log("CT5*T5");
+            console.log(T5*CT5);
             return (T1*CT1+T2*CT2+T3*CT3+T4*CT4+T5*CT5);
         }
         function RelicRes() {
@@ -101,48 +107,48 @@ $(document).ready(function() {
         function GemDrop() {
             //placeholder
         }
-        /*while(VALUE_BEFORE>VALUE_AFTER){
+        while(VALUE_BEFORE>VALUE_AFTER){
             var CURRENT = Current();
+            console.log("CURRENT");
             console.log(CURRENT);
             var CRRES = (((RRES/1,5)+1)*RELICP)/(RelicRes() -CURRENT);
-            var CGRES = (((GRES/1)+1)*GEMP)/(GemRes() -CURRENT);
+            console.log("CRRES");
+            console.log(CRRES);
+            var CGRES = (((GRES/1)+5)*GEMP)/(GemRes() -CURRENT);
             var CRLUCK = (((RLUCK/3)+1)*RELICP)/(ResLuck() -CURRENT);
             var CRDROP = (((RDROP/1)+1)*RELICP)/(RelicDrop() -CURRENT);
-            var CGDROP = (((GDROP/1)+1)*GEMP)/(GemDrop() -CURRENT);
+            var CGDROP = (((GDROP/1)+5)*GEMP)/(GemDrop() -CURRENT);
+            console.log("MAX");
+            console.log(Math.max(CRRES,CGRES,CRLUCK,CRDROP,CGDROP));
             switch(Math.max(CRRES,CGRES,CRLUCK,CRDROP,CGDROP)) {
                 case CRRES:
                     VALUE_AFTER = ((RRES/1,5)+1)*RELICP;
-                    console.log(VALUE_AFTER);
                     RRES = RRES+1,5;
                     $("#rres").html(RRES);
                     break;
                 case CGRES:
                     VALUE_AFTER = ((GRES/1)+1)*GEMP;
-                    console.log(VALUE_AFTER);
                     GRES = GRES+1;
                     $("#gres").html(GRES);
                     break;
                 case CRLUCK:
                     VALUE_AFTER = ((RLUCK/3)+1)*RELICP;
-                    console.log(VALUE_AFTER);
                     RLUCK = RLUCK+3;
                     $("#rluck").html(RLUCK);
                     break;
                 case CRDROP:
                     VALUE_AFTER = ((RDROP/1)+1)*RELICP;
-                    console.log(VALUE_AFTER);
                     RDROP = RDROP+1;
                     $("#rdrop").html(RDROP);
                     break;
                 case CGDROP:
                     VALUE_AFTER = ((GDROP/1)+1)*GEMP;
-                    console.log(VALUE_AFTER);
                     GDROP = GDROP+1;
                     $("#gdrop").html(GDROP);
                     break;
                 default:
                     console.log("ERROR");
             };
-        };*/
+        };
 });
 });
