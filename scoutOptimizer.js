@@ -2,10 +2,10 @@ $(document).ready(function() {
     $("#scout").click(function() {
         var GLEVEL = parseInt($('#glevel').val());
         var LEVEL = parseInt($('#level').val());
-        var XP = parseInt($('#xp').val());
+        var XP = parseFloat($('#xp').val());
         var EFF = parseInt($('#eff').val());
         var KRES = parseInt($('#kres').val());
-        var KLUCK = parseInt($('#kluck').val());
+        var KLUCK = parseFloat($('#kluck').val());
         var RELIC = parseInt($('#relic').val());
         var RINVESTED = parseInt($('#rinvested').val());
         var GINVESTED = parseInt($('#ginvested').val());
