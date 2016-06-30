@@ -104,11 +104,10 @@ $(document).ready(function() {
         function GemDrop() {
             //placeholder
         }
-        /*
-        while(VALUE_BEFORE>VALUE_AFTER){
+        //while(VALUE_BEFORE>VALUE_AFTER){
             var CURRENT = Current();
             console.log(CURRENT);
-            var CRRES = (((RRES/1,5)+1)*RELICP)/(RelicRes() -CURRENT);
+            /*var CRRES = (((RRES/1,5)+1)*RELICP)/(RelicRes() -CURRENT);
             var CGRES = (((GRES/1)+1)*GEMP)/(GemRes() -CURRENT);
             var CRLUCK = (((RLUCK/3)+1)*RELICP)/(ResLuck() -CURRENT);
             var CRDROP = (((RDROP/1)+1)*RELICP)/(RelicDrop() -CURRENT);
@@ -144,7 +143,9 @@ $(document).ready(function() {
                     GDROP = GDROP+1;
                     $("#gdrop").html(GDROP);
                     break;
-            }
+                default:
+                    console.log("ERROR");
+            };
         }*/
 });
 });
