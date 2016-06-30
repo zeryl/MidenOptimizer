@@ -8,6 +8,8 @@ var RELIC = document.getElementById('relic');
 var RINVESTED = document.getElementById('rinvested');
 var GINVESTED = document.getElementById('ginvested');
 
-document.getElementById("scout").onclick = function(){
-    document.getElementsByTagName("body")[0].style.backgroundColor = "yellow";
-}
+document.onload = function(){
+    document.getElementById("scout").onclick = function(){
+        document.getElementsByTagName("body")[0].style.backgroundColor = "yellow";
+};
+};
