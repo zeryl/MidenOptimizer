@@ -10,6 +10,6 @@ var GINVESTED = document.getElementById('ginvested');
 
 document.onload = function(){
     document.getElementById("scout").onclick = function(){
-        document.getElementsByTagName("body")[0].style.backgroundColor = "yellow";
+        document.getElementsByTagName("BODY")[0].style.backgroundColor = "yellow";
 };
 };
