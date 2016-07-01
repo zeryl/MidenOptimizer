@@ -11,6 +11,14 @@ body {
     background-color: rgb(63, 63, 63);
 }
 
+.tab1 {
+    color:#FFF;
+}
+
+.tab2 {
+    color:#FFF;
+}
+
 .output {
   color: #FFF;
 }
