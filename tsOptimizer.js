@@ -29,10 +29,10 @@ $(document).ready(function() {
         function Current() {
             var EFF_LEVEL= (LEVEL+EFF+RRES)/100;
             var T1 = (1+EFF_LEVEL)*(1+(KRES/100))*(1+(GRES/100));
-            var T2 = (1+EFF_LEVEL*(Math.pow(0.67,1)))*(1+(KRES/100))*(1+(GRES/100))*2;
-            var T3 = (1+EFF_LEVEL*(Math.pow(0.67,2)))*(1+(KRES/100))*(1+(GRES/100))*4;
-            var T4 = (1+EFF_LEVEL*(Math.pow(0.67,3)))*(1+(KRES/100))*(1+(GRES/100))*5;
-            var T5 = (1+EFF_LEVEL*(Math.pow(0.67,4)))*(1+(KRES/100))*(1+(GRES/100))*10;
+            var T2 = (1+EFF_LEVEL*(Math.pow(0.67,1)))*(1+(KRES/100))*(1+(GRES/100));
+            var T3 = (1+EFF_LEVEL*(Math.pow(0.67,2)))*(1+(KRES/100))*(1+(GRES/100));
+            var T4 = (1+EFF_LEVEL*(Math.pow(0.67,3)))*(1+(KRES/100))*(1+(GRES/100));
+            var T5 = (1+EFF_LEVEL*(Math.pow(0.67,4)))*(1+(KRES/100))*(1+(GRES/100));
             var CT1 = (0.90+KLUCK/100+RLUCK/100);
             if(CT1>1){CT1=1;}
             var CT2 = (0.60+(KLUCK/100+RLUCK/100)*(Math.pow(0.67,1)));
@@ -54,10 +54,10 @@ $(document).ready(function() {
         function RelicRes() {
             var EFF_LEVEL= (LEVEL+EFF+RRES+1.5)/100;
             var T1 = (1+EFF_LEVEL)*(1+(KRES/100))*(1+(GRES/100));
-            var T2 = (1+EFF_LEVEL*(Math.pow(0.67,1)))*(1+(KRES/100))*(1+(GRES/100))*2;
-            var T3 = (1+EFF_LEVEL*(Math.pow(0.67,2)))*(1+(KRES/100))*(1+(GRES/100))*4;
-            var T4 = (1+EFF_LEVEL*(Math.pow(0.67,3)))*(1+(KRES/100))*(1+(GRES/100))*5;
-            var T5 = (1+EFF_LEVEL*(Math.pow(0.67,4)))*(1+(KRES/100))*(1+(GRES/100))*10;
+            var T2 = (1+EFF_LEVEL*(Math.pow(0.67,1)))*(1+(KRES/100))*(1+(GRES/100));
+            var T3 = (1+EFF_LEVEL*(Math.pow(0.67,2)))*(1+(KRES/100))*(1+(GRES/100));
+            var T4 = (1+EFF_LEVEL*(Math.pow(0.67,3)))*(1+(KRES/100))*(1+(GRES/100));
+            var T5 = (1+EFF_LEVEL*(Math.pow(0.67,4)))*(1+(KRES/100))*(1+(GRES/100));
             var CT1 = (0.90+KLUCK/100+RLUCK/100);
             if(CT1>1){CT1=1;}
             var CT2 = (0.60+(KLUCK/100+RLUCK/100)*(Math.pow(0.67,1)));
@@ -73,10 +73,10 @@ $(document).ready(function() {
         function GemRes() {
             var EFF_LEVEL= (LEVEL+EFF+RRES)/100;
             var T1 = (1+EFF_LEVEL)*(1+(KRES/100))*(1.01+(GRES/100));
-            var T2 = (1+EFF_LEVEL*(Math.pow(0.67,1)))*(1+(KRES/100))*(1.01+(GRES/100))*2;
-            var T3 = (1+EFF_LEVEL*(Math.pow(0.67,2)))*(1+(KRES/100))*(1.01+(GRES/100))*4;
-            var T4 = (1+EFF_LEVEL*(Math.pow(0.67,3)))*(1+(KRES/100))*(1.01+(GRES/100))*5;
-            var T5 = (1+EFF_LEVEL*(Math.pow(0.67,4)))*(1+(KRES/100))*(1.01+(GRES/100))*10;
+            var T2 = (1+EFF_LEVEL*(Math.pow(0.67,1)))*(1+(KRES/100))*(1.01+(GRES/100));
+            var T3 = (1+EFF_LEVEL*(Math.pow(0.67,2)))*(1+(KRES/100))*(1.01+(GRES/100));
+            var T4 = (1+EFF_LEVEL*(Math.pow(0.67,3)))*(1+(KRES/100))*(1.01+(GRES/100));
+            var T5 = (1+EFF_LEVEL*(Math.pow(0.67,4)))*(1+(KRES/100))*(1.01+(GRES/100));
             var CT1 = (0.90+KLUCK/100+RLUCK/100);
             if(CT1>1){CT1=1;}
             var CT2 = (0.60+(KLUCK/100+RLUCK/100)*(Math.pow(0.67,1)));
@@ -93,10 +93,10 @@ $(document).ready(function() {
             var NRLUCK=RLUCK+0.3;
             var EFF_LEVEL= (LEVEL+EFF+RRES)/100;
             var T1 = (1+EFF_LEVEL)*(1+(KRES/100))*(1+(GRES/100));
-            var T2 = (1+EFF_LEVEL*(Math.pow(0.67,1)))*(1+(KRES/100))*(1+(GRES/100))*2;
-            var T3 = (1+EFF_LEVEL*(Math.pow(0.67,2)))*(1+(KRES/100))*(1+(GRES/100))*4;
-            var T4 = (1+EFF_LEVEL*(Math.pow(0.67,3)))*(1+(KRES/100))*(1+(GRES/100))*5;
-            var T5 = (1+EFF_LEVEL*(Math.pow(0.67,4)))*(1+(KRES/100))*(1+(GRES/100))*10;
+            var T2 = (1+EFF_LEVEL*(Math.pow(0.67,1)))*(1+(KRES/100))*(1+(GRES/100));
+            var T3 = (1+EFF_LEVEL*(Math.pow(0.67,2)))*(1+(KRES/100))*(1+(GRES/100));
+            var T4 = (1+EFF_LEVEL*(Math.pow(0.67,3)))*(1+(KRES/100))*(1+(GRES/100));
+            var T5 = (1+EFF_LEVEL*(Math.pow(0.67,4)))*(1+(KRES/100))*(1+(GRES/100));
             var CT1 = (0.90+KLUCK/100+NRLUCK/100);
             if(CT1>1){CT1=1;}
             var CT2 = (0.60+(KLUCK/100+NRLUCK/100)*(Math.pow(0.67,1)));
