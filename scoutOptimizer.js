@@ -117,11 +117,11 @@ $(document).ready(function() {
             var CURRENT = Current();
             console.log("CURRENT");
             console.log(CURRENT);
-            var CRRES = (((RRES/1.5)+1)*RELICP)/(RelicRes() -CURRENT);
+            var CRRES = (((RRES/1.5)+1)*RELICP)/((RelicRes() -CURRENT)*((1+RELIC/100)/3000)*RELICP);
             console.log("CRRES");
             console.log(CRRES);
-            var CGRES = ((Math.floor((GRES+1)/5)+5)*GEMP)/(GemRes() -CURRENT);
-            var CRLUCK = (((RLUCK/0.3)+1)*RELICP)/(ResLuck() -CURRENT);
+            var CGRES = ((Math.floor((GRES+1)/5)+5)*GEMP)/((GemRes() -CURRENT)*((1+RELIC/100)/3000)*RELICP);
+            var CRLUCK = (((RLUCK/0.3)+1)*RELICP)/((ResLuck() -CURRENT)*((1+RELIC/100)/3000)*RELICP);
             var DROPS = Drop();
             var CRDROP = (((RDROP/0.5)+1)*RELICP)/(DROPS*0.00005);
             var CGDROP = ((Math.floor((GDROP+1)/5)+5)*GEMP)/(DROPS*0.0001);
