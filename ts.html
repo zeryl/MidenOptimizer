@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="Control.css">
+    <script type="text/javascript" src="jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="scoutOptimizer.js"></script>
+    <title>
+      MidenQuestOnline Optimizer
+    </title>
+  </head>
+  <body>
+    <div>
+      <div class='main'> Global level </div>
+      <input class="textBox" id="glevel" type="number" maxlength="30" required/>
+      <div class='main'> Level </div>
+      <input class="textBox" id="level" type="number" maxlength="30" required/>
+      <div class='main'> XP </div>
+      <input class="textBox" id="xp" type="number" maxlength="30" required/>
+      <div class='main'> Efficiency </div>
+      <input class="textBox" id="eff" type="number" maxlength="30" required/>
+      <div class='main'> Kingdom Res % </div>
+      <input class="textBox" id="kres" type="number" maxlength="30" required/>
+      <div class='main'> Kingdom Luck %</div>
+      <input class="textBox" id="kluck" type="number" maxlength="30" required/>
+      <div class='main'> Relic % </div>
+      <input class="textBox" id="relic" type="number" maxlength="30" required/>
+      <div class='main'> Relics Invested </div>
+      <input class="textBox" id="rinvested" type="number" maxlength="30" required/>
+      <div class='main'> Gems Invested </div>
+      <input class="textBox" id="ginvested" type="number" maxlength="30" required/>
+      <div class='main'> Relic price </div>
+      <input class="textBox" id="relicp" type="number" maxlength="30" required/>
+      <div class='main'> Gem price </div>
+      <input class="textBox" id="gemp" type="number" maxlength="30" required/>
+      <div class='main'> ME price </div>
+      <input class="textBox" id="mep" type="number" maxlength="30" value="47" required/>
+      <div class='main'> T1 price </div>
+      <input class="textBox" id="t1p" type="number" maxlength="30" required/>
+      <div class='main'> T2 price </div>
+      <input class="textBox" id="t2p" type="number" maxlength="30" required/>
+      <div class='main'> T3 price </div>
+      <input class="textBox" id="t3p" type="number" maxlength="30" required/>
+      <div class='main'> T4 price </div>
+      <input class="textBox" id="t4p" type="number" maxlength="30" required/>
+      <div class='main'> T5 price </div>
+      <input class="textBox" id="t5p" type="number" maxlength="30" required/>
+      <div class='main'> Tax </div>
+      <input class="textBox" id="tax" type="number" maxlength="30" required/>
+    </div>
+    <div>
+      Optimized
+      <div>
+        <div class='output'> Relic Res % </div><div id='rres'>0</div>
+        <div class='output'> Gem Res % </div> <div id='gres'>0</div>
+        <div class='output'> Relic Luck % </div><div id='rluck'>0</div>
+        <div class='output'> Relic Drop % </div><div id='rdrop'>0</div>
+        <div class='output'> Gem Drop % </div><div id='gdrop'>0</div>
+      </div>
+    </div>
+    <button id='scout'>Go</button>
+  </body>
+</html>
