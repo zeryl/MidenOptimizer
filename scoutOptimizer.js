@@ -37,12 +37,6 @@ $(document).ready(function() {
             if(CT4>1){CT4=1;}
             var CT5 = (0.05+(KLUCK/100+RLUCK/100)*(Math.pow(0.67,4)));
             if(CT5>1){CT5=1;}
-            console.log("T5");
-            console.log(T5);
-            console.log("CT5");
-            console.log(CT5);
-            console.log("CT5*T5");
-            console.log(T5*CT5);
             return (T1*CT1+T2*CT2+T3*CT3+T4*CT4+T5*CT5);
         }
         function RelicRes() {
@@ -115,18 +109,12 @@ $(document).ready(function() {
         }
         while(VALUE_BEFORE>VALUE_AFTER){
             var CURRENT = Current();
-            console.log("CURRENT");
-            console.log(CURRENT);
             var CRRES = (((RRES/1.5)+1)*RELICP)/((RelicRes() -CURRENT)*((1+RELIC/100)/3000)*RELICP);
-            console.log("CRRES");
-            console.log(CRRES);
             var CGRES = ((Math.floor((GRES+1)/5)+5)*GEMP)/((GemRes() -CURRENT)*((1+RELIC/100)/3000)*RELICP);
             var CRLUCK = (((RLUCK/0.3)+1)*RELICP)/((ResLuck() -CURRENT)*((1+RELIC/100)/3000)*RELICP);
             var DROPS = Drop();
             var CRDROP = (((RDROP/0.5)+1)*RELICP)/(DROPS*0.00005);
             var CGDROP = ((Math.floor((GDROP+1)/5)+5)*GEMP)/(DROPS*0.0001);
-            console.log("MAX");
-            console.log(Math.min(CRRES,CGRES,CRLUCK,CRDROP,CGDROP));
             switch(Math.min(CRRES,CGRES,CRLUCK,CRDROP,CGDROP)) {
                 case CRRES:
                     VALUE_AFTER = VALUE_AFTER + ((RRES/1.5)+1)*RELICP;
