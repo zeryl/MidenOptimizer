@@ -1,26 +1,26 @@
 .main {
-  padding-left: 50px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  margin-left: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 #scouting {
   display: inline;
   position: absolute;
-  padding-top: 25em;
-  padding-left:30em;
+  margin-top: 25em;
+  margin-left:30em;
 }
 
 #ts {
   display: inline;
   position: absolute;
-  padding-top: 25em;
-  padding-left:40em;
+  margin-top: 25em;
+  margin-left:40em;
 }
 
 #selling {
   display: inline;
   position: absolute;
-  padding-top: 25em;
-  padding-left:50em;
+  margin-top: 25em;
+  margin-left:50em;
 }
