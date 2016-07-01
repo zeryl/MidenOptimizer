@@ -11,10 +11,15 @@ body {
     background-color: rgb(63, 63, 63);
 }
 
+.output {
+  color: #FFF;
+}
+
 .main {
   margin-left: 50px;
   margin-top: 25px;
   margin-bottom: 25px;
+  color: #FFF;
 }
 
 .button {
