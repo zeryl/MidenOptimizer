@@ -108,9 +108,9 @@ $(document).ready(function() {
             var KeyDrop = 0.0081*GEMP + 1.164*RELICP + 17.625*MEP + 1120.587675;
             var Relic635Drop = 1.025*RELICP*(1 + RELIC/100);
             var Relic15Drop = 0.9*RELICP*(1 + RELIC/100);
-            var GoldDrop = (1000 + (500 + 45*GLEVEL))*0.185;
+            var GoldDrop = (1000 + (500 + 45*GLEVEL))*0.135;
             var MEDrop = 500*MEP;
-            var ItemDrop = 1120.587675;
+            var ItemDrop = 29882.338;
             return (GemDrop+KeyDrop+Relic635Drop+Relic15Drop+GoldDrop+MEDrop+ItemDrop);
         }
         while(VALUE_BEFORE>VALUE_AFTER){
