@@ -17,6 +17,35 @@ body {
   margin-bottom: 25px;
 }
 
+.button {
+    box-shadow: rgb(1, 176, 170) 0px 0px 0px 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(1, 176, 170);
+    border-top-color: rgb(1, 176, 170);
+    border-right-color: rgb(1, 176, 170);
+    border-bottom-color: rgb(1, 176, 170);
+    border-left-color: rgb(1, 176, 170);
+    border-radius: 5px;
+    color: #FF9900;
+    background: linear-gradient(rgb(3, 128, 124) 0px, rgb(2, 82, 79) 100%) rgb(3, 128, 124);
+    background-image: linear-gradient(rgb(3, 128, 124) 0px, rgb(2, 82, 79) 100%);
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(3, 128, 124);
+}
+
 #scouting {
   display: inline;
   position: absolute;
