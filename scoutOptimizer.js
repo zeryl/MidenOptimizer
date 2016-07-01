@@ -12,6 +12,7 @@ $(document).ready(function() {
         var RELICP = parseInt($('#relicp').val());
         var GEMP = parseInt($('#gemp').val());
         var MEP = parseInt($('#mep').val());
+        if(isNaN(MEP)){MEP=47;};
         var RRES = 0;
         var GRES = 0;
         var RLUCK = 0;
