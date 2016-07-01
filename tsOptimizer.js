@@ -17,7 +17,7 @@ $(document).ready(function() {
         var T3P = parseInt($('#t3p').val());
         var T4P = parseInt($('#t4p').val());
         var T5P = parseInt($('#t5p').val());
-        var TAX = parseInt($('#t6p').val());
+        var TAX = parseInt($('#tax').val());
         if(isNaN(MEP)){MEP=47;};
         var RRES = 0;
         var GRES = 0;
