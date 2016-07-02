@@ -10,64 +10,78 @@
         <title>MQO Scouting Optimizer</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.3.1/hint.base.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.3.1/hint.min.css">
     </head>
     <body>
         <div class="container">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand">Scouting Relic Optimizer</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">Home</a></li>
+                        <li class="active"><a href="ts.html">Tradeskill Optimizer</a></li>
+                        <li><a href="scouting.html">Scouting Optimizer</a></li>
+                    </ul>
+                </div>
+            </nav>
             <form class="form-horizontal form-group-sm" method="post" id="resform">
                 <div class="row">
-                    <div class="col-xs-2">Global Level</div>
+                    <div class="col-xs-2 hint--bottom" aria-label="This is your global level, from the top right of the page.">Global Level <span class="glyphicon glyphicon-question-sign"></span></div>
                     <div class="col-xs-3"><input id="glevel" type="number" class="form-control stored" value="0" required></div>
                     <div class="col-xs-2">T1 Price</div>
                     <div class="col-xs-3"><input id="t1p" class="form-control stored" value="0" required></div>                    
                 </div>
                 <div class="row">
-                    <div class="col-xs-2">Level</div>
+                    <div class="col-xs-2 hint--bottom" aria-label="Current tradeskill level.">Level <span class="glyphicon glyphicon-question-sign"></span></div>
                     <div class="col-xs-3"><input id="level" type="number" class="form-control stored" value="0" required></div>
                     <div class="col-xs-2">T2 Price</div>
                     <div class="col-xs-3"><input id="t2p" class="form-control stored" value="0" required></div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-2">XP</div>
+                    <div class="col-xs-2 hint--bottom" aria-label="Current +experience from the tradeskill relic tab.">XP <span class="glyphicon glyphicon-question-sign"></span></div>
                     <div class="col-xs-3"><input id="xp" class="form-control stored" value="0" required></div>
                     <div class="col-xs-2">T3 Price</div>
                     <div class="col-xs-3"><input id="t3p" class="form-control stored" value="0" required></div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-2">Efficiency</div>
+                    <div class="col-xs-2 hint--bottom" aria-label="Current efficiency from Equipment -> Special page.">Efficiency <span class="glyphicon glyphicon-question-sign"></span></div>
                     <div class="col-xs-3"><input id="eff" class="form-control stored" value="0" required></div>
                     <div class="col-xs-2">T4 Price</div>
                     <div class="col-xs-3"><input id="t4p" class="form-control stored" value="0" required></div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-2">Kingdom Res %</div>
+                    <div class="col-xs-2 hint--bottom" aria-label="Current resource bonus from the kingdom tile. This is the T1 Kingdom line on the Amount tab.">Kingdom Res % <span class="glyphicon glyphicon-question-sign"></span></div>
                     <div class="col-xs-3"><input id="kres" class="form-control stored" value="0" required></div>
                     <div class="col-xs-2">T5 Price</div>
                     <div class="col-xs-3"><input id="t5p" class="form-control stored" value="0" required></div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-2">Kingdom Luck %</div>
+                    <div class="col-xs-2 hint--bottom" aria-label="Current resource luck bonus from the kingdom tile. This is the T1 Kingdom line on the Chance tab.">Kingdom Luck % <span class="glyphicon glyphicon-question-sign"></span></div>
                     <div class="col-xs-3"><input id="kluck" class="form-control stored" value="0" required></div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-2">Relic %</div>
+                    <div class="col-xs-2 hint--bottom" aria-label="Current Relic % on Equipment -> Special page.">Relic % <span class="glyphicon glyphicon-question-sign"></span></div>
                     <div class="col-xs-3"><input id="relic" class="form-control stored" value="0" required></div>
                     <div class="col-xs-2">Relic Price</div>
                     <div class="col-xs-3"><input id="relicp" class="form-control stored" value="0" required></div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-2">Relics Invested</div>
+                    <div class="col-xs-2 hint--bottom" aria-label="Current number of relics invested, on the Account -> Manage Boosts page.">Relics Invested <span class="glyphicon glyphicon-question-sign"></span></div>
                     <div class="col-xs-3"><input id="rinvested" class="form-control stored" value="0" required></div>
                     <div class="col-xs-2">Gem Price</div>
                     <div class="col-xs-3"><input id="gemp" class="form-control stored" value="0" required></div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-2">Gems Invested</div>
+                    <div class="col-xs-2 hint--bottom" aria-label="Current number of gems invested, on the Account -> Manage Boosts page.">Gems Invested <span class="glyphicon glyphicon-question-sign"></span></div>
                     <div class="col-xs-3"><input id="ginvested" class="form-control stored" value="0" required></div>
                     <div class="col-xs-2">ME Price</div>
                     <div class="col-xs-3"><input id="mep" class="form-control stored" value="0" required></div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-2">Tax</div>
+                    <div class="col-xs-2 hint--bottom" aria-label="Current tax rate of the tile">Tax <span class="glyphicon glyphicon-question-sign"></span></div>
                     <div class="col-xs-3"><input class="form-control stored" id="tax" maxlength="30" required/></div>
                 </div>
                 <div class="clearfix"></div>
@@ -96,7 +110,7 @@
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="scoutOptimizer.js"></script>
+        <script type="text/javascript" src="tsOptimizer.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
                 $('.stored').each(function() {
