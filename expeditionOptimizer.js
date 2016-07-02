@@ -61,7 +61,7 @@ $(document).ready(function() {
     var ORBMAX = 0;
     var SCROLLMIN = 0;
     var SCROLLMAX = 0;
-    function Resources(){
+    function Resources(i){
       switch(HEROES[i]){
         case 1:
           HEROES[i]=Math.min(T1M,T1G,T1W,T1F);
@@ -162,6 +162,9 @@ $(document).ready(function() {
     }
     function Healer(){
       
+    }
+    for(i=1;i<=5;i++){
+      Resources(i);
     }
     for(i=1;i<=ADVGUILD;i++){
       var CWARRIOR = Warrior();
