@@ -16,7 +16,7 @@
             <form class="form-horizontal form-group-sm" method="post" id="resform">
                 <div class="row">
                     <div class="col-xs-2">Global Level</div>
-                    <div class="col-xs-3"><input id="glevel" type="number" class="form-control stored" value="0" required data-toggle="tooltip" title="Your global level as seen in the top right."></div>
+                    <div class="col-xs-3"><input id="glevel" type="number" class="form-control stored" value="0" required></div>
                     <div class="col-xs-2">Relic Price</div>
                     <div class="col-xs-3"><input id="relicp" class="form-control stored" value="0" required></div>
                 </div>
@@ -85,14 +85,11 @@
         <script type="text/javascript" src="scoutOptimizer.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
-               function init() {
-                   $('.stored').each(function() {
-                      if(localStorage[$(this).attr('id')]) {
-                          document.getElementById($(this).attr('id')).value = Number(localStorage[$(this).attr('id')]);
-                      } 
-                   });
-               }
-               init();
+                $('.stored').each(function() {
+                if(localStorage[$(this).attr('id')]) {
+                    document.getElementById($(this).attr('id')).value = Number(localStorage[$(this).attr('id')]);
+                }
+            });
             });
             
             $('.stored').keyup(function() {
