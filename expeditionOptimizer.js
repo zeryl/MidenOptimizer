@@ -149,7 +149,6 @@ $(document).ready(function() {
           }
           break;
       }
-      switch()
     }
     function Warrior(){
       
