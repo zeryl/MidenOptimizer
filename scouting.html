@@ -1,49 +1,103 @@
-<html>
-  <head>
-    <link rel="stylesheet" href="Control.css">
-    <script type="text/javascript" src="jquery-3.0.0.min.js"></script>
-    <script type="text/javascript" src="scoutOptimizer.js"></script>
-    <title>
-      MidenQuestOnline Optimizer
-    </title>
-  </head>
-  <body>
-    <div>
-      <div class='tab1'> Global level </div>
-      <input class="textBox" id="glevel" type="number" maxlength="30" required/>
-      <div class='tab1'> Level </div>
-      <input class="textBox" id="level" type="number" maxlength="30" required/>
-      <div class='tab1'> XP </div>
-      <input class="textBox" id="xp" type="number" maxlength="30" required/>
-      <div class='tab2'> Efficiency </div>
-      <input class="textBox" id="eff" type="number" maxlength="30" required/>
-      <div class='tab2'> Kingdom Res % </div>
-      <input class="textBox" id="kres" type="number" maxlength="30" required/>
-      <div class='tab2'> Kingdom Luck %</div>
-      <input class="textBox" id="kluck" type="number" maxlength="30" required/>
-      <div class='tab2'> Relic % </div>
-      <input class="textBox" id="relic" type="number" maxlength="30" required/>
-      <div class='tab3'> Relics Invested </div>
-      <input class="textBox" id="rinvested" type="number" maxlength="30" required/>
-      <div class='tab3'> Gems Invested </div>
-      <input class="textBox" id="ginvested" type="number" maxlength="30" required/>
-      <div class='tab3'> Relic price </div>
-      <input class="textBox" id="relicp" type="number" maxlength="30" required/>
-      <div class='tab3'> Gem price </div>
-      <input class="textBox" id="gemp" type="number" maxlength="30" required/>
-      <div class='tab3'> ME price </div>
-      <input class="textBox" id="mep" type="number" maxlength="30" value="47" required/>
-    </div>
-    <div>
-      Optimized
-      <div>
-        <div class='output'> Relic Res % </div><div class='output' id='rres'>0</div>
-        <div class='output'> Gem Res % </div> <div class='output' id='gres'>0</div>
-        <div class='output'> Relic Luck % </div><div class='output' id='rluck'>0</div>
-        <div class='output'> Relic Drop % </div><div class='output' id='rdrop'>0</div>
-        <div class='output'> Gem Drop % </div><div class='output' id='gdrop'>0</div>
-      </div>
-    </div>
-    <button class='button' id='scout'>Go</button>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="MQO Relic Optimizer">
+        <meta name="author" content="DarkFury">
+
+        <title>MQO Scouting Optimizer</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <form class="form-horizontal form-group-sm" method="post" id="resform">
+                <div class="row">
+                    <div class="col-xs-2">Global Level</div>
+                    <div class="col-xs-3"><input id="glevel" type="number" class="form-control stored" value="0" required data-toggle="tooltip" title="Your global level as seen in the top right."></div>
+                    <div class="col-xs-2">Relic Price</div>
+                    <div class="col-xs-3"><input id="relicp" class="form-control stored" value="0" required></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2">Level</div>
+                    <div class="col-xs-3"><input id="level" type="number" class="form-control stored" value="0" required></div>
+                    <div class="col-xs-2">Gem Price</div>
+                    <div class="col-xs-3"><input id="gemp" class="form-control stored" value="0" required></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2">XP</div>
+                    <div class="col-xs-3"><input id="xp" class="form-control stored" value="0" required></div>
+                    <div class="col-xs-2">ME Price</div>
+                    <div class="col-xs-3"><input id="mep" class="form-control stored" value="0" required></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2">Efficiency</div>
+                    <div class="col-xs-3"><input id="eff" class="form-control stored" value="0" required></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2">Kingdom Res %</div>
+                    <div class="col-xs-3"><input id="kres" class="form-control stored" value="0" required></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2">Kingdom Luck %</div>
+                    <div class="col-xs-3"><input id="kluck" class="form-control stored" value="0" required></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2">Relic %</div>
+                    <div class="col-xs-3"><input id="relic" class="form-control stored" value="0" required></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2">Relics Invested</div>
+                    <div class="col-xs-3"><input id="rinvested" class="form-control stored" value="0" required></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2">Gems Invested</div>
+                    <div class="col-xs-3"><input id="ginvested" class="form-control stored" value="0" required></div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="row">
+                    <div class="col-md-12"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12"></div>
+                </div>
+                <div class="panel panel-primary" id="outcome">
+                    <div class="panel-heading text-center">Optimized Output</div>
+                    <div class="panel-footer">
+                        <a href="#" class="list-group-item">Relic Res % <span class="badge" id="rres">0</span></a>
+                        <a href="#" class="list-group-item">Gem Res % <span class="badge" id="gres">0</span></a>
+                        <a href="#" class="list-group-item">Relic Luck % <span class="badge" id="rluck">0</span></a>
+                        <a href="#" class="list-group-item">Relic Drop % <span class="badge" id="rdrop">0</span></a>
+                        <a href="#" class="list-group-item">Gem Drop % <span class="badge" id="gdrop">0</span></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-primary center-block" id="scout">Go</button>
+                </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="scoutOptimizer.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+               function init() {
+                   $('.stored').each(function() {
+                      if(localStorage[$(this).attr('id')]) {
+                          document.getElementById($(this).attr('id')).value = Number(localStorage[$(this).attr('id')]);
+                      } 
+                   });
+               }
+               init();
+            });
+            
+            $('.stored').keyup(function() {
+               localStorage[$(this).attr('id')] = $(this).val(); 
+            });
+        </script>
+    </body>
 </html>
