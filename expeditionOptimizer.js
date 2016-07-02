@@ -25,18 +25,84 @@ $(document).ready(function() {
     var T4F = parseInt($('#t4f').val());
     var T5F = parseInt($('#t5f').val());
     //Boosts
-    var GEMB = parseInt($('gemb').val());
-    var RELICB = parseInt($('relicb').val());
-    var KEYB = parseInt($('keyb').val());
-    var ORBB = parseInt($('orbb').val());
-    var SCROLLB = parseInt($('scrollb').val());
-    var TIMEB = parseInt($('timeb').val());
+    var GEMB = parseInt($('#gemb').val());
+    var RELICB = parseInt($('#relicb').val());
+    var KEYB = parseInt($('#keyb').val());
+    var ORBB = parseInt($('#orbb').val());
+    var SCROLLB = parseInt($('#scrollb').val());
+    var TIMEB = parseInt($('#timeb').val());
     //Prices
-    var GEMP = parseInt($('gemp').val());
-    var RELICP = parseInt($('relicp').val());
+    var GEMP = parseInt($('#gemp').val());
+    var RELICP = parseInt($('#relicp').val());
+    //var ORBP = parseInt($('#orbp').val());
+    //var SCROLLB = parseInt($('#scrollb').val());
     var KEYP = 0.0081*GEMP + 1.164*RELICP + 17.625*45 + 1120.587675;
     //Buildings
-    var INN = parseInt($('inn').val()); // 3% per inn MULTIPLIED!
-    var ADVGUILD = parseInt($('advguild').val());
+    var INN = parseInt($('#inn').val()); // 3% per inn MULTIPLIED!
+    var ADVGUILD = parseInt($('#advguild').val());
+    //Heroes
+    var WARRIOR = parseInt($('#warrior').val());
+    var HUNTER = parseInt($('#hunter').val());
+    var MAGE = parseInt($('#mage').val());
+    var HEALER = parseInt($('#healer').val());
+    var OUTPUT = [];
+    var HEROES = [];
+    HEROES[1] = WARRIOR;
+    HEROES[2] = HUNTER;
+    HEROES[3] = MAGE;
+    HEROES[4] = HEALER;
+    var GEMMIN = 0;
+    var GEMMAX = 0;
+    var RELICMIN = 0;
+    var RELICMAX = 2;
+    var KEYMIN = 0;
+    var KEYMAX = 0;
+    var ORBMIN = 0;
+    var ORBMAX = 0;
+    var SCROLLMIN = 0;
+    var SCROLLMAX = 0;
+    function Resources(){
+      switch(HEROES[i]){
+        case 1:
+          HEROES[i]=Math.min(T1M,T1G,T1W,T1F);
+          switch(Math.min(T1M,T1G,T1W,T1F)){
+            case T1M:
+              $("#t1m").css("color", "green");
+          }
+          break;
+        case 2:
+          HEROES[i]=Math.min(T2M,T2G,T2W,T2F);
+          break;
+        case 3:
+          HEROES[i]=Math.min(T3M,T3G,T3W,T3F);
+          break;
+        case 4:
+          HEROES[i]=Math.min(T4M,T4G,T4W,T4F);
+          break;
+        case 5:
+          HEROES[i]=Math.min(T5M,T5G,T5W,T5F);
+          break;
+      }
+      switch()
+    }
+    function Warrior(){
+      
+    }
+    function Hunter(){
+      
+    }
+    function Mage(){
+      
+    }
+    function Healer(){
+      
+    }
+    for(i=1;i<=ADVGUILD;i++){
+      var CWARRIOR = Warrior();
+      var CHUNTER = Hunter();
+      var CMAGE = Mage();
+      var CHEALER = Healer();
+    }
+    
   });
 });
