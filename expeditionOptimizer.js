@@ -67,16 +67,16 @@ $(document).ready(function() {
           HEROES[i]=Math.min(T1M,T1G,T1W,T1F);
           switch(Math.min(T1M,T1G,T1W,T1F)){
             case T1M:
-              $("#t1m").css("color", "green");
+              $(".t1m").css("color", "green");
               break;
             case T1G:
-              $("#t1g").css("color", "green");
+              $(".t1g").css("color", "green");
               break;
             case T1W:
-              $("#t1w").css("color", "green");
+              $(".t1w").css("color", "green");
               break;
             case T1F:
-              $("#t1f").css("color", "green");
+              $(".t1f").css("color", "green");
               break;
           }
           break;
@@ -84,16 +84,16 @@ $(document).ready(function() {
           HEROES[i]=Math.min(T2M,T2G,T2W,T2F);
           switch(Math.min(T2M,T2G,T2W,T2F)){
             case T2M:
-              $("#t2m").css("color", "green");
+              $(".t2m").css("color", "green");
               break;
             case T2G:
-              $("#t2g").css("color", "green");
+              $(".t2g").css("color", "green");
               break;
             case T2W:
-              $("#t2w").css("color", "green");
+              $(".t2w").css("color", "green");
               break;
             case T2F:
-              $("#t2f").css("color", "green");
+              $(".t2f").css("color", "green");
               break;
           }
           break;
@@ -101,16 +101,16 @@ $(document).ready(function() {
           HEROES[i]=Math.min(T3M,T3G,T3W,T3F);
           switch(Math.min(T3M,T3G,T3W,T3F)){
             case T3M:
-              $("#t3m").css("color", "green");
+              $(".t3m").css("color", "green");
               break;
             case T3G:
-              $("#t3g").css("color", "green");
+              $(".t3g").css("color", "green");
               break;
             case T3W:
-              $("#t3w").css("color", "green");
+              $(".t3w").css("color", "green");
               break;
             case T3F:
-              $("#t3f").css("color", "green");
+              $(".t3f").css("color", "green");
               break;
           }
           break;
@@ -118,16 +118,16 @@ $(document).ready(function() {
           HEROES[i]=Math.min(T4M,T4G,T4W,T4F);
           switch(Math.min(T4M,T4G,T4W,T4F)){
             case T4M:
-              $("#t4m").css("color", "green");
+              $(".t4m").css("color", "green");
               break;
             case T4G:
-              $("#t4g").css("color", "green");
+              $(".t4g").css("color", "green");
               break;
             case T3W:
-              $("#t4w").css("color", "green");
+              $(".t4w").css("color", "green");
               break;
             case T4F:
-              $("#t4f").css("color", "green");
+              $(".t4f").css("color", "green");
               break;
           }
           break;
@@ -135,16 +135,16 @@ $(document).ready(function() {
           HEROES[i]=Math.min(T5M,T5G,T5W,T5F);
           switch(Math.min(T5M,T5G,T5W,T5F)){
             case T5M:
-              $("#t5m").css("color", "green");
+              $(".t5m").css("color", "green");
               break;
             case T5G:
-              $("#t5g").css("color", "green");
+              $(".t5g").css("color", "green");
               break;
             case T5W:
-              $("#t5w").css("color", "green");
+              $(".t5w").css("color", "green");
               break;
             case T5F:
-              $("#t5f").css("color", "green");
+              $(".t5f").css("color", "green");
               break;
           }
           break;
