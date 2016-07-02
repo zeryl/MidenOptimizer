@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="Control.css">
+    <script type="text/javascript" src="jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="expeditionOptimizer.js"></script>
+    <title>
+      MidenQuestOnline Optimizer
+    </title>
+  </head>
+  <body>
+    <div>
+      <div class='tab1'> T1 Mining </div>
+      <input class="textBox" id="t1m" type="number" maxlength="30" required/>
+      <div class='tab1'> T2 Mining </div>
+      <input class="textBox" id="t2m" type="number" maxlength="30" required/>
+      <div class='tab1'> T3 Mining </div>
+      <input class="textBox" id="t3m" type="number" maxlength="30" required/>
+      <div class='tab2'> T4 Mining </div>
+      <input class="textBox" id="t4m" type="number" maxlength="30" required/>
+      <div class='tab2'> T5 Mining </div>
+      <input class="textBox" id="t5m" type="number" maxlength="30" required/>
+      <div class='tab2'> T1 Gathering </div>
+      <input class="textBox" id="t1g" type="number" maxlength="30" required/>
+      <div class='tab2'> T2 Gathering </div>
+      <input class="textBox" id="t2g" type="number" maxlength="30" required/>
+      <div class='tab3'> T3 Gathering </div>
+      <input class="textBox" id="t3g" type="number" maxlength="30" required/>
+      <div class='tab3'> T4 Gathering </div>
+      <input class="textBox" id="t4g" type="number" maxlength="30" required/>
+      <div class='tab3'> T5 Gathering </div>
+      <input class="textBox" id="t5g" type="number" maxlength="30" required/>
+      <div class='tab3'> T1 Woodcutting </div>
+      <input class="textBox" id="t1w" type="number" maxlength="30" required/>
+      <div class='tab3'> T2 Woodcutting </div>
+      <input class="textBox" id="t2w" type="number" maxlength="30" value="47" required/>
+      <div class='tab3'> T3 Woodcutting </div>
+      <input class="textBox" id="t3w" type="number" maxlength="30" required/>
+      <div class='tab3'> T4 Woodcutting </div>
+      <input class="textBox" id="t4w" type="number" maxlength="30" required/>
+      <div class='tab3'> T5 Woodcutting </div>
+      <input class="textBox" id="t5w" type="number" maxlength="30" required/>
+      <div class='tab3'> T1 Fishing </div>
+      <input class="textBox" id="t1f" type="number" maxlength="30" required/>
+      <div class='tab3'> T2 Fishing </div>
+      <input class="textBox" id="t2f" type="number" maxlength="30" required/>
+      <div class='tab3'> T3 Fishing </div>
+      <input class="textBox" id="t3f" type="number" maxlength="30" required/>
+      <div class='tab3'> T4 Fishing </div>
+      <input class="textBox" id="t4f" type="number" maxlength="30" required/>
+      <div class='tab3'> T5 Fishing </div>
+      <input class="textBox" id="t5f" type="number" maxlength="30" required/>
+      <div class='tab3'> Gem Boost </div>
+      <input class="textBox" id="gemb" type="number" maxlength="30" required/>
+      <div class='tab3'> Relic Boost </div>
+      <input class="textBox" id="relicb" type="number" maxlength="30" required/>
+      <div class='tab3'> Key Boost </div>
+      <input class="textBox" id="keyb" type="number" maxlength="30" required/>
+      <div class='tab3'> Orb Boost </div>
+      <input class="textBox" id="orbb" type="number" maxlength="30" required/>
+      <div class='tab3'> Scroll Boost </div>
+      <input class="textBox" id="scrollb" type="number" maxlength="30" required/>
+      <div class='tab3'> Time Boost </div>
+      <input class="textBox" id="timeb" type="number" maxlength="30" required/>
+    </div>
+    <div>
+      Optimized
+      <div>
+        <div class='output'> Relic Res % </div><div class='output' id='rres'>0</div>
+        <div class='output'> Gem Res % </div> <div class='output' id='gres'>0</div>
+        <div class='output'> Relic Luck % </div><div class='output' id='rluck'>0</div>
+        <div class='output'> Relic Drop % </div><div class='output' id='rdrop'>0</div>
+        <div class='output'> Gem Drop % </div><div class='output' id='gdrop'>0</div>
+      </div>
+    </div>
+    <button class='button' id='expedition'>Go</button>
+  </body>
+</html>
